@@ -12,15 +12,16 @@ const Header = () => {
   // Animação de balanço suave (efeito de vento)
   const windSwayVariants = {
     animate: {
-      rotate: [0, 1.2, -1.2, 0],
+      rotate: [0, 1.5, -1.5, 0], // Leve rotação
       transition: {
-        duration: 5,
+        duration: 6, // Duração longa para ser suave
         repeat: Infinity,
         ease: "easeInOut",
       },
     },
   };
 
+  // Caminho do caule crescendo
   const stemPathLength = 1200;
   const strokeDashoffset = useTransform(
     scrollYProgress,
@@ -28,6 +29,7 @@ const Header = () => {
     [stemPathLength * 0.95, 0]
   );
 
+  // Opacidade das folhas conforme o scroll
   const leaf1Opacity = useTransform(scrollYProgress, [0.05, 0.1], [0, 1]);
   const leaf2Opacity = useTransform(scrollYProgress, [0.12, 0.18], [0, 1]);
   const leaf3Opacity = useTransform(scrollYProgress, [0.22, 0.28], [0, 1]);
@@ -61,6 +63,7 @@ const Header = () => {
   const languages: { code: Language; label: string }[] = [
     { code: "pt", label: "PT" },
     { code: "en", label: "EN" },
+    //{ code: "es", label: "ES" },
   ];
 
   return (
@@ -137,15 +140,18 @@ const Header = () => {
         </div>
       </motion.header>
 
-      {/* Planta - Ajustada para ser mais à esquerda no mobile e com balanço suave */}
-      <div className="fixed left-[12px] md:left-[42px] top-[16px] pointer-events-none" style={{ zIndex: 1000 }}>
+      {/* Planta Crescendo e Balançando
+          - left-[-10px] no mobile para mover o vaso para a esquerda.
+          - origin-[40px_0px] define o ponto de pivô do balanço no topo/centro do vaso.
+      */}
+      <div className="fixed left-[-10px] md:left-[42px] top-[16px] pointer-events-none" style={{ zIndex: 1000 }}>
         <motion.svg
           width="90"
           height="1400"
           viewBox="0 0 90 1400"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="overflow-visible origin-top"
+          className="overflow-visible origin-[40px_0px]"
           variants={windSwayVariants}
           animate="animate"
         >
@@ -155,7 +161,7 @@ const Header = () => {
           <ellipse cx="40" cy="28" rx="16" ry="4" fill="rgba(0,0,0,0.1)" />
           <ellipse cx="40" cy="30" rx="14" ry="3" fill="#4a3728" />
 
-          {/* Caule */}
+          {/* Caule Principal */}
           <motion.path
             d="M41 30 Q40 80, 50 160 Q60 260, 40 360 Q30 460, 55 560 Q65 660, 40 760 Q30 860, 55 960 Q65 1060, 45 1160 Q35 1260, 50 1350"
             stroke="#6B8E77"
@@ -166,53 +172,98 @@ const Header = () => {
             style={{ strokeDashoffset }}
           />
 
-          {/* Folhas - escala reduzida no mobile via origin-center e classes tailwind */}
-          <motion.g style={{ opacity: leaf1Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folhas
+             - scale-[0.65] no mobile para ficarem menores.
+             - transformOrigin definido manualmente para cada folha (ex: "47px 100px")
+               garante que elas diminuam em direção ao caule, mantendo a conexão correta.
+          */}
+
+          {/* Folha 1 - Direita */}
+          <motion.g
+            style={{ opacity: leaf1Opacity, transformOrigin: "47px 100px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M47 100 Q72 80, 78 98 Q82 120, 60 125 Q47 120, 47 100" fill="#6B8E77" />
             <path d="M47 100 Q62 108, 70 115" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf2Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 2 - Esquerda */}
+          <motion.g
+            style={{ opacity: leaf2Opacity, transformOrigin: "42px 200px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M42 200 Q15 185, 10 205 Q8 230, 30 235 Q42 228, 42 200" fill="#7A9E87" />
             <path d="M42 200 Q25 212, 18 225" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf3Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 3 - Direita */}
+          <motion.g
+            style={{ opacity: leaf3Opacity, transformOrigin: "55px 320px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M55 320 Q82 300, 88 322 Q90 355, 68 360 Q55 352, 55 320" fill="#6B8E77" />
             <path d="M55 320 Q72 335, 78 348" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf4Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 4 - Esquerda */}
+          <motion.g
+            style={{ opacity: leaf4Opacity, transformOrigin: "35px 420px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M35 420 Q8 405, 3 428 Q0 460, 25 465 Q38 458, 35 420" fill="#7A9E87" />
             <path d="M35 420 Q18 438, 12 452" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf5Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 5 - Direita */}
+          <motion.g
+            style={{ opacity: leaf5Opacity, transformOrigin: "58px 540px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M58 540 Q85 522, 88 548 Q86 582, 65 585 Q55 578, 58 540" fill="#6B8E77" />
             <path d="M58 540 Q75 558, 78 572" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf6Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 6 - Esquerda */}
+          <motion.g
+            style={{ opacity: leaf6Opacity, transformOrigin: "38px 660px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M38 660 Q10 648, 5 672 Q2 705, 28 710 Q42 702, 38 660" fill="#7A9E87" />
             <path d="M38 660 Q20 680, 14 695" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf7Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 7 - Direita */}
+          <motion.g
+            style={{ opacity: leaf7Opacity, transformOrigin: "52px 780px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M52 780 Q80 762, 85 788 Q84 822, 62 825 Q50 818, 52 780" fill="#6B8E77" />
             <path d="M52 780 Q70 798, 74 812" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf8Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 8 - Esquerda */}
+          <motion.g
+            style={{ opacity: leaf8Opacity, transformOrigin: "35px 900px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M35 900 Q8 888, 3 912 Q0 945, 25 950 Q38 942, 35 900" fill="#7A9E87" />
             <path d="M35 900 Q18 918, 12 935" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf9Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 9 - Direita */}
+          <motion.g
+            style={{ opacity: leaf9Opacity, transformOrigin: "58px 1020px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M58 1020 Q85 1002, 88 1028 Q86 1062, 65 1065 Q55 1058, 58 1020" fill="#6B8E77" />
             <path d="M58 1020 Q75 1038, 78 1052" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
 
-          <motion.g style={{ opacity: leaf10Opacity }} className="scale-[0.65] md:scale-100 origin-center">
+          {/* Folha 10 - Esquerda */}
+          <motion.g
+            style={{ opacity: leaf10Opacity, transformOrigin: "42px 1150px" }}
+            className="scale-[0.65] md:scale-100"
+          >
             <path d="M42 1150 Q12 1138, 6 1165 Q3 1200, 30 1205 Q45 1196, 42 1150" fill="#7A9E87" />
             <path d="M42 1150 Q22 1172, 16 1190" stroke="#5A7A66" strokeWidth="1.5" fill="none" />
           </motion.g>
