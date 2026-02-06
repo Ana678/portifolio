@@ -35,29 +35,29 @@ export const translations = {
         },
         {
           year: "2022 - Atual",
-          title: "UX/UI Designer & Desenvolvedora Web",
+          title: "UX/UI Designer",
           institution: "Datavence",
           description:
-            "Idealizo e construo plataformas web para partidos políticos, contribuindo ativamente para a democracia e política do país.",
+            "Idealizo e construo tecologias para partidos políticos, fortalecendo a governança democrática através da tecnologia.",
           type: "work",
           highlights: [
-            "Sistemas que otimizam a gestão partidária e captação de recursos",
-            "Recursos avançados para gerenciar filiados",
+            "Arquitetura de sistemas escaláveis para gestão partidária e captação de recursos eficiente.",
+            "Desenvolvimento de dashboards inteligentes para gestão de filiados e análise de dados políticos.",
           ],
-          impact: "Organização Partidária Nacional",
+          impact: "Modernização da Estrutura Partidária Nacional",
         },
         {
-          year: "2022 - Atual",
+          year: "2025 - Atual",
           title: "UX/UI Designer",
           institution: "1Gov",
           description:
-            "Idealizo e construo soluções tecnológicas para a saúde pública, impactando positivamente a vida dos cidadãos brasileiros.",
+            "Projeto soluções centradas no usuário para o setor de saúde pública, otimizando a jornada do paciente e a eficiência operacional das unidades de saúde.",
           type: "work",
           highlights: [
-            "Sistemas de gestão hospitalar que reduzem tempo de atendimento",
-            "Interfaces acessíveis que facilitam o trabalho de profissionais de saúde",
+            "Design de sistemas de gestão hospitalar focados na redução do tempo de triagem e atendimento.",
+            "Criação de interfaces inclusivas e acessíveis para profissionais de saúde em ambientes de alta pressão.",
           ],
-          impact: "Saúde Pública Brasileira",
+          impact: "Eficiência Tecnológica na Saúde Pública Brasileira",
         },
         {
           year: "2026 - Atual",
@@ -229,19 +229,29 @@ export const translations = {
         },
         {
           year: "2022 - Present",
-          title: "UX/UI Designer & Web Developer",
+          title: "UX/UI Designer",
           institution: "Datavence",
           description:
-            "Idealizing and building web platforms for political parties, actively contributing to democracy and the country's politics.",
+            "Architecting and developing digital technologies for political organizations, strengthening democratic governance through innovation.",
           type: "work",
+          highlights: [
+            "Designed scalable systems for political management and efficient fundraising strategies.",
+            "Developed intelligent dashboards for membership management and political data analysis.",
+          ],
+          impact: "Modernization of National Political Infrastructure",
         },
         {
-          year: "2022 - Present",
+          year: "2025 - Present",
           title: "UX/UI Designer",
           institution: "1Gov",
           description:
-            "Idealizing and building technological solutions for public health, positively impacting Brazilian citizens' lives.",
+            "Designing user-centric solutions for the public health sector, optimizing patient journeys and operational efficiency in healthcare facilities.",
           type: "work",
+          highlights: [
+            "UX design for hospital management systems focused on reducing triage and wait times.",
+            "Creating inclusive and accessible interfaces for healthcare professionals in high-pressure environments.",
+          ],
+          impact: "Technological Efficiency in Brazilian Public Health",
         },
         {
           year: "2026 - Present",
