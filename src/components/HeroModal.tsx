@@ -8,21 +8,16 @@ interface HeroModalProps {
 }
 
 const introTexts = {
-  pt: {
-    greeting: "Oi! Eu sou a Ana Carolina 👋",
-    bio: "Engenheira de software, UX/UI designer e desenvolvedora web. Trabalho na Datavence e na 1Gov idealizando soluções que impactam a política e a saúde pública do Brasil. Acredito que tecnologia serve às pessoas — e fora do código, adoro correr, pedalar e gatos 🐱",
-    cta: "Vamos criar algo juntos?",
-  },
-  en: {
-    greeting: "Hi! I'm Ana Carolina 👋",
-    bio: "Software engineer, UX/UI designer, and web developer. I work at Datavence and 1Gov building solutions that impact politics and public health in Brazil. I believe technology serves people — and outside of code, I love running, cycling, and cats 🐱",
-    cta: "Let's build something together?",
-  },
-  es: {
-    greeting: "¡Hola! Soy Ana Carolina 👋",
-    bio: "Ingeniera de software, UX/UI designer y desarrolladora web. Trabajo en Datavence y 1Gov creando soluciones que impactan la política y la salud pública de Brasil. Creo que la tecnología sirve a las personas — y fuera del código, amo correr, pedalear y los gatos 🐱",
-    cta: "¿Creamos algo juntos?",
-  },
+    pt: {
+    greeting: "Olá! Sou Ana Carolina.",
+    bio: "Engenheira de software, designer UX/UI e desenvolvedora web, atuo na Datavence e na 1Gov na criação de soluções digitais que geram impacto real na política pública e na saúde no Brasil. Acredito profundamente na tecnologia como instrumento de transformação social, orientada pelas necessidades das pessoas.",
+    cta: "Vamos criar algo relevante juntos?",
+    },
+    en: {
+    greeting: "Hello! I'm Ana Carolina.",
+    bio: "Software engineer, UX/UI designer, and web developer. At Datavence and 1Gov, I design and build digital solutions that create meaningful impact in public policy and public health in Brazil. I strongly believe in technology as a tool for social transformation, guided by people’s real needs.",
+    cta: "Let’s create something meaningful together?",
+    },
 };
 
 const HeroModal = ({ isOpen, onClose }: HeroModalProps) => {
@@ -95,7 +90,15 @@ const HeroModal = ({ isOpen, onClose }: HeroModalProps) => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
               >
-                <a href="#contact" onClick={onClose} className="btn-primary inline-block">
+                <a href="#contact"
+                    onClick={(e) => {
+                        e.preventDefault()
+                        document
+                        .getElementById("contact")
+                        ?.scrollIntoView({ behavior: "smooth" })
+                        onClose()
+                    }}
+                    className="btn-primary inline-block">
                   {content.cta}
                 </a>
               </motion.div>

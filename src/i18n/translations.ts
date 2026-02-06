@@ -166,7 +166,7 @@ export const translations = {
     },
     contact: {
       title: "Vamos Conversar",
-      subtitle: "Estou sempre aberta a novas oportunidades e conexões.",
+      subtitle: "Clique nos botões abaixo para entrar em contato comigo. ",
       email: "E-mail",
       whatsapp: "WhatsApp",
       getInTouch: "Entrar em contato",
@@ -334,13 +334,14 @@ export const translations = {
           hasDemo: false,
           hasCode: false,
           hasFigma: true,
-          figma: "https://www.figma.com/design/4OzMQZoTSOCXxx3RZuV6Mk/Projeto-PIU?node-id=3-2&t=xtqB6TjZNr99ouze-1",
+          figma:
+            "https://www.figma.com/design/4OzMQZoTSOCXxx3RZuV6Mk/Projeto-PIU?node-id=3-2&t=xtqB6TjZNr99ouze-1",
         },
       ],
     },
     contact: {
       title: "Let's Talk",
-      subtitle: "I'm always open to new opportunities and connections.",
+      subtitle: "Press the buttons below to get in touch with me.",
       email: "Email",
       whatsapp: "WhatsApp",
       getInTouch: "Get in touch",
