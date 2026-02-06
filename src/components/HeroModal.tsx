@@ -10,14 +10,15 @@ interface HeroModalProps {
 const introTexts = {
     pt: {
     greeting: "Olá! Sou Ana Carolina.",
-    bio: "Engenheira de software, designer UX/UI e desenvolvedora web, atuo na Datavence e na 1Gov na criação de soluções digitais que geram impacto real na política pública e na saúde no Brasil. Acredito profundamente na tecnologia como instrumento de transformação social, orientada pelas necessidades das pessoas.",
-    cta: "Vamos criar algo relevante juntos?",
+    bio: "Sou entusiasta da tecnologia como forma de transformação social e atuo como designer UX/UI e desenvolvedora web. Atualmente, contribuo na Datavence e na 1Gov na criação de soluções digitais que geram impacto concreto na política pública e na saúde no Brasil. Acredito na tecnologia orientada por pessoas, valores e propósito.",
+    cta: "Vamos criar algo significativo juntos?",
     },
     en: {
     greeting: "Hello! I'm Ana Carolina.",
-    bio: "Software engineer, UX/UI designer, and web developer. At Datavence and 1Gov, I design and build digital solutions that create meaningful impact in public policy and public health in Brazil. I strongly believe in technology as a tool for social transformation, guided by people’s real needs.",
+    bio: "I am an enthusiast of technology as a means for social transformation, working as a UX/UI designer and web developer. Currently, I contribute at Datavence and 1Gov by creating digital solutions that generate tangible impact in public policy and public health in Brazil. I believe in technology guided by people, values, and purpose.",
     cta: "Let’s create something meaningful together?",
     },
+
 };
 
 const HeroModal = ({ isOpen, onClose }: HeroModalProps) => {
