@@ -9,7 +9,7 @@ export const translations = {
     hero: {
       title: "Engenharia de Software com Propósito Humano",
       subtitle:
-        "UX Designer & Desenvolvedora Web — unindo a rigidez técnica da engenharia com a sensibilidade do design",
+        "UX/UI Designer & Desenvolvedora Web — unindo a rigidez técnica da engenharia com a sensibilidade do design",
       cta: "Ver Projetos",
     },
     about: {
@@ -38,16 +38,26 @@ export const translations = {
           title: "UX/UI Designer & Desenvolvedora Web",
           institution: "Datavence",
           description:
-            "Idealizando e construindo plataformas web para partidos políticos, contribuindo ativamente para a democracia e política do país.",
+            "Idealizo e construo plataformas web para partidos políticos, contribuindo ativamente para a democracia e política do país.",
           type: "work",
+          highlights: [
+            "Sistemas que otimizam a gestão partidária e captação de recursos",
+            "Recursos avançados para gerenciar filiados",
+          ],
+          impact: "Organização Partidária Nacional",
         },
         {
           year: "2022 - Atual",
           title: "UX/UI Designer",
           institution: "1Gov",
           description:
-            "Idealizando e construindo soluções tecnológicas para a saúde pública, impactando positivamente a vida dos cidadãos brasileiros.",
+            "Idealizo e construo soluções tecnológicas para a saúde pública, impactando positivamente a vida dos cidadãos brasileiros.",
           type: "work",
+          highlights: [
+            "Sistemas de gestão hospitalar que reduzem tempo de atendimento",
+            "Interfaces acessíveis que facilitam o trabalho de profissionais de saúde",
+          ],
+          impact: "Saúde pública nacional",
         },
         {
           year: "2026 - Atual",
@@ -87,7 +97,7 @@ export const translations = {
       ai: {
         title: "IA como Ferramenta",
         description:
-          "Uso a IA como ferramenta de produtividade para focar no que é humano: estratégia, UX e criatividade.",
+          "Uso a IA como ferramenta de produtividade para focar no que é humano: estratégia, UX/UI e criatividade.",
       },
       soft: {
         title: "Design & Empatia",
@@ -103,6 +113,13 @@ export const translations = {
       demo: "Demo",
       code: "Code",
       figma: "Figma",
+      livesite: "Site",
+      close: "Fechar",
+      overview: "Visão Geral",
+      role: "Meu Papel",
+      results: "Resultados",
+      techStack: "Stack Técnica",
+      links: "Links do Projeto",
       projects: [
         {
           // https://www.figma.com/design/8Bzu2fRaY875TwtBhIjfC6/COOKUP?node-id=0-1&t=Z15QQ84Dt9sx0wd6-1
@@ -114,6 +131,8 @@ export const translations = {
           hasDemo: false,
           hasCode: true,
           hasFigma: true,
+          figma:
+            "https://www.figma.com/design/8Bzu2fRaY875TwtBhIjfC6/COOKUP?node-id=0-1&t=Z15QQ84Dt9sx0wd6-1",
         },
 
         {
@@ -137,6 +156,7 @@ export const translations = {
           hasDemo: false,
           hasCode: true,
           hasFigma: true,
+          figma: "https://www.figma.com/design/VXcliMY0EYshQI6vEmK57M/SAPSENSE?node-id=3-3&t=aJGttdO2EeS82YkB-1",
         },
         //https://www.figma.com/design/m2KAdIx6IHbCBP7Echxezy/RestoWeb?node-id=203-2&t=Tf2MeM77rgzqXluk-1
         {
@@ -260,7 +280,7 @@ export const translations = {
       ai: {
         title: "AI as a Tool",
         description:
-          "I use AI as a productivity tool to focus on what's human: strategy, UX and creativity.",
+          "I use AI as a productivity tool to focus on what's human: strategy, UX/UI and creativity.",
       },
       soft: {
         title: "Design & Empathy",
