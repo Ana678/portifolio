@@ -17,12 +17,6 @@ const ContactSection = () => {
       value: "anaaraujo.dev@gmail.com",
     },
     {
-      icon: Phone,
-      label: t.contact.whatsapp,
-      href: "https://wa.me/5584998422170",
-      value: "+55 84 98422-2170",
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://linkedin.com/in/ana-carolina-28448520b/",
