@@ -1,381 +1,388 @@
 import { Figma } from "lucide-react";
 
 export const translations = {
-  pt: {
-    nav: {
-      about: "Sobre",
-      skills: "Skills",
-      portfolio: "Portfólio",
-      contact: "Contato",
+    pt: {
+        nav: {
+            about: "Sobre",
+            skills: "Skills",
+            portfolio: "Portfólio",
+            contact: "Contato",
+        },
+        hero: {
+            title: "Design Estratégico. Arquitetura Escalável.",
+            subtitle:
+                "UX/UI Designer & Desenvolvedora Full Stack — Unindo design estratégico e engenharia robusta para entregar produtos de alto impacto que impulsionam resultados de negócio.",
+            cta: "Ver Projetos",
+        },
+        about: {
+            title: "Minha Trajetória",
+            intro:
+                "Uma jornada de constante evolução, transformando problemas complexos em soluções digitais intuitivas e escaláveis ao longo de mais de 4 anos de experiência.",
+            timeline: [
+                {
+                    year: "2017 - 2021",
+                    title: "Técnico em Informática",
+                    institution: "IFRN",
+                    description:
+                        "A base do pensamento estruturado. Primeiros passos em desenvolvimento, lógica de programação e algoritmos.",
+                    type: "education",
+                },
+                {
+                    year: "2022 - 2025",
+                    title: "Tecnologia da Informação",
+                    institution: "UFRN",
+                    description:
+                        "Aprofundamento em engenharia de software, arquitetura de sistemas e desenvolvimento com fundamentos sólidos e boas práticas.",
+                    type: "education",
+                },
+                {
+                    year: "2022 - 2026",
+                    title: "UX/UI Designer & Desenvolvedora",
+                    institution: "Datavence",
+                    description:
+                        "Idealizo e construo tecnologias estratégicas para o setor político, fortalecendo a governança e a transparência através da tecnologia.",
+                    type: "work",
+                    highlights: [
+                        "Arquitetura e design de sistemas escaláveis para gestão de entidades e captação eficiente de recursos.",
+                        "Desenvolvimento de dashboards analíticos complexos para tomada de decisão baseada em dados.",
+                    ],
+                    impact: "Modernização da Estrutura Partidária Nacional",
+                },
+                {
+                    year: "2025 - 2026",
+                    title: "UX/UI Designer",
+                    institution: "1Gov",
+                    description:
+                        "Projeto soluções tecnológicas de alto impacto para a saúde pública, com foco total na acessibilidade e na eficiência da jornada do paciente.",
+                    type: "work",
+                    highlights: [
+                        "Design de sistemas hospitalares otimizados para reduzir o tempo de triagem e acelerar o atendimento crítico.",
+                        "Criação de interfaces inclusivas e cognitivamente amigáveis para profissionais de saúde em ambientes de alta pressão.",
+                    ],
+                    impact: "Eficiência e Humanização na Saúde Pública",
+                },
+                {
+                    year: "2026 - Atual",
+                    title: "Engenharia de Software",
+                    institution: "UFRN - 2º Ciclo",
+                    description:
+                        "Especialização em arquiteturas complexas e padrões de projeto, consolidando a visão de ponta a ponta do ciclo de vida do software.",
+                    type: "education",
+                },
+            ],
+        },
+        bento: {
+            active: {
+                title: "Além do Código",
+                description:
+                    "Acredito que profissionais criativos e analíticos precisam de repertório diverso. Sou movida pelo esporte (corrida, academia e bike) e busco o equilíbrio mental na natureza e no contato com os animais. Exercito minha criatividade de forma analógica com artesanato, macramê e crochê. Eventos de tecnologia, viagens e fotografia expandem minha visão de mundo, refletindo diretamente na forma empática como construo produtos digitais.",
+            },
+            tech: {
+                title: "Hard Skills",
+                skills: [
+                    "React",
+                    "Next.js",
+                    "TypeScript",
+                    "Java",
+                    "Spring Cloud",
+                    "NestJS",
+                    "Node.js",
+                    "API REST",
+                    "Scrum",
+                    "C++",
+                    "Python",
+                    "Figma",
+                    "PostgreSQL",
+                    "Git",
+                ],
+            },
+            ai: {
+                title: "IA Estratégica",
+                description:
+                    "Utilizo a Inteligência Artificial como aceleradora de produtividade técnica, liberando meu tempo para focar no que é insubstituível: estratégia de negócio, empatia no UX e inovação.",
+            },
+            soft: {
+                title: "Design de Impacto",
+                description:
+                    "Crio interfaces que respeitam a carga cognitiva do usuário. Para mim, o bom design é aquele que resolve problemas silenciosamente, transformando complexidade em fluidez.",
+            },
+        },
+        portfolio: {
+            title: "Projetos em Destaque",
+            subtitle:
+                "Cases que demonstram a intersecção entre arquitetura de software eficiente e design centrado no usuário.",
+            viewProject: "Detalhes do Projeto",
+            demo: "Ver Demo",
+            code: "Repositório",
+            figma: "Design",
+            livesite: "Acessar Site",
+            close: "Fechar",
+            overview: "Visão Geral",
+            role: "Meu Papel",
+            results: "Resultados",
+            techStack: "Stack Técnica",
+            links: "Links do Projeto",
+            projects: [
+                {
+                    title: "CASI - Saúde Geriátrica Integrada",
+                    description:
+                        "Sistema de gestão clínica e agendamento focado no público da terceira idade, priorizando acessibilidade e clareza visual.",
+                    tags: ["UX/UI", "Arquitetura de Informação"],
+                    img: "assets/img/casi.png",
+                    hasDemo: false,
+                    hasCode: false,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/4OzMQZoTSOCXxx3RZuV6Mk/Projeto-PIU?node-id=3-2&t=xtqB6TjZNr99ouze-1",
+                },
+                {
+                    title: "TourAi",
+                    description:
+                        "Plataforma inteligente que utiliza IA generativa para arquitetar roteiros de viagem hiper-personalizados e automatizados.",
+                    tags: ["React", "Next", "Spring Boot", "PostgreSQL"],
+                    img: "assets/img/tourai.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: false,
+                    code: "https://github.com/Ana678/tourai-frontend",
+                },
+                {
+                    title: "SAPSSense - Apoio Clínico em UTI",
+                    description:
+                        "Sistema de apoio à decisão médica que integra Inteligência Artificial ao modelo SAPS III para predição precisa de mortalidade em UTIs.",
+                    tags: ["Flask", "CSS", "IA / Machine Learning"],
+                    img: "assets/img/saps.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/VXcliMY0EYshQI6vEmK57M/SAPSENSE?node-id=3-3&t=aJGttdO2EeS82YkB-1",
+                },
+                {
+                    title: "CookUP",
+                    description:
+                        "Aplicação interativa de culinária que combina o compartilhamento de receitas com mecânicas de rede social e gamificação.",
+                    tags: ["Flutter", "Dart", "Firebase", "UI/UX"],
+                    img: "assets/img/cookup.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/8Bzu2fRaY875TwtBhIjfC6/COOKUP?node-id=0-1&t=Z15QQ84Dt9sx0wd6-1",
+                },
+                {
+                    title: "RestoWeb",
+                    description:
+                        "Plataforma Full Stack para gestão de restaurantes, otimizando o fluxo de informações em tempo real entre o salão de atendimento e a cozinha.",
+                    tags: ["React", "Tailwind", "Node.js", "MySQL"],
+                    img: "assets/img/restoweb.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/m2KAdIx6IHbCBP7Echxezy/RestoWeb?node-id=203-2&t=Tf2MeM77rgzqXluk-1",
+                },
+            ],
+        },
+        contact: {
+            title: "Vamos construir o próximo passo?",
+            subtitle: "Estou disponível para novos desafios. Escolha seu canal preferido e vamos conversar sobre como posso agregar ao seu time.",
+            email: "E-mail",
+            whatsapp: "WhatsApp",
+            getInTouch: "Iniciar Conversa",
+        },
     },
-    hero: {
-      title: "Engenharia de Software com Propósito Humano",
-      subtitle:
-        "UX/UI Designer & Desenvolvedora Web — unindo a rigidez técnica da engenharia com a sensibilidade do design",
-      cta: "Ver Projetos",
+    en: {
+        nav: {
+            about: "About",
+            skills: "Skills",
+            portfolio: "Portfolio",
+            contact: "Contact",
+        },
+        hero: {
+            title: "Strategic Design. Scalable Architecture.",
+            subtitle:
+                "UX/UI Designer & Full Stack Developer — Turning complex business rules into high-performance systems and fluid user experiences.",
+            cta: "View Projects"
+        },
+        about: {
+            title: "My Journey",
+            intro:
+                "A journey of continuous growth, transforming complex problems into intuitive and scalable digital solutions over 4+ years of experience.",
+            timeline: [
+                {
+                    year: "2017 - 2021",
+                    title: "IT Technician",
+                    institution: "IFRN",
+                    description:
+                        "The foundation of structured thinking. First steps into software development, programming logic, and algorithms.",
+                    type: "education",
+                },
+                {
+                    year: "2022 - 2025",
+                    title: "Information Technology",
+                    institution: "UFRN",
+                    description:
+                        "Deep dive into software engineering, systems architecture, and solid fundamental development practices.",
+                    type: "education",
+                },
+                {
+                    year: "2022 - 2026",
+                    title: "UX/UI Designer & Developer",
+                    institution: "Datavence",
+                    description:
+                        "Architecting and building strategic technologies for the political sector, strengthening governance and transparency through tech.",
+                    type: "work",
+                    highlights: [
+                        "Designed and implemented scalable systems for entity management and efficient fundraising strategies.",
+                        "Developed complex analytical dashboards for data-driven decision making.",
+                    ],
+                    impact: "Modernization of National Political Infrastructure",
+                },
+                {
+                    year: "2025 - 2026",
+                    title: "UX/UI Designer",
+                    institution: "1Gov",
+                    description:
+                        "Designing high-impact technological solutions for public health, with a strong focus on accessibility and patient journey efficiency.",
+                    type: "work",
+                    highlights: [
+                        "UX design for hospital management systems optimized to reduce triage times and accelerate critical care.",
+                        "Created inclusive and cognitively friendly interfaces for healthcare professionals in high-pressure environments.",
+                    ],
+                    impact: "Efficiency and Humanization in Public Health",
+                },
+                {
+                    year: "2026 - Present",
+                    title: "Software Engineering",
+                    institution: "UFRN - 2nd Cycle",
+                    description:
+                        "Specialization in complex architectures and design patterns, solidifying an end-to-end view of the software lifecycle.",
+                    type: "education",
+                },
+            ],
+        },
+        bento: {
+            active: {
+                title: "Beyond the Screen",
+                description:
+                    "I believe analytical and creative professionals need a diverse background. I stay active with running, the gym, and cycling, while finding mental balance in nature and animals. I exercise my creativity offline through crafts like macramé and crochet. Tech events, traveling, and photography expand my worldview, directly reflecting on the empathetic way I build digital products.",
+            },
+            tech: {
+                title: "Hard Skills",
+                skills: [
+                    "React",
+                    "Next.js",
+                    "TypeScript",
+                    "Java",
+                    "Spring Cloud",
+                    "NestJS",
+                    "Node.js",
+                    "REST API",
+                    "Scrum",
+                    "C++",
+                    "Python",
+                    "Figma",
+                    "PostgreSQL",
+                    "Git",
+                ],
+            },
+            ai: {
+                title: "Strategic AI",
+                description:
+                    "I use Artificial Intelligence as a technical productivity accelerator, freeing up my time to focus on what is irreplaceable: business strategy, empathetic UX, and innovation.",
+            },
+            soft: {
+                title: "Impactful Design",
+                description:
+                    "I design interfaces that respect the user's cognitive load. To me, great design solves problems silently, turning complexity into fluid experiences.",
+            },
+        },
+        portfolio: {
+            title: "Featured Projects",
+            subtitle:
+                "Cases demonstrating the intersection between efficient software architecture and user-centered design.",
+            viewProject: "Project Details",
+            demo: "Live Demo",
+            code: "Repository",
+            figma: "Design",
+            livesite: "Live Site",
+            close: "Close",
+            overview: "Overview",
+            role: "My Role",
+            results: "Results",
+            techStack: "Tech Stack",
+            links: "Project Links",
+            projects: [
+                {
+                    title: "CASI - Integrated Geriatric Health",
+                    description:
+                        "Clinical management and scheduling system focused on elderly patients, prioritizing accessibility and visual clarity.",
+                    tags: ["UX/UI", "Information Architecture"],
+                    img: "assets/img/casi.png",
+                    hasDemo: false,
+                    hasCode: false,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/4OzMQZoTSOCXxx3RZuV6Mk/Projeto-PIU?node-id=3-2&t=xtqB6TjZNr99ouze-1",
+                },
+                {
+                    title: "TourAi",
+                    description:
+                        "Smart platform utilizing generative AI to architect hyper-personalized and automated travel itineraries.",
+                    tags: ["React", "Next", "Spring Boot", "PostgreSQL"],
+                    img: "assets/img/tourai.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: false,
+                    code: "https://github.com/Ana678/tourai-frontend",
+                },
+                {
+                    title: "SAPSSense - ICU Clinical Support",
+                    description:
+                        "Medical decision-support system integrating Artificial Intelligence with the SAPS III model for accurate ICU mortality prediction.",
+                    tags: ["Flask", "CSS", "AI / Machine Learning"],
+                    img: "assets/img/saps.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/VXcliMY0EYshQI6vEmK57M/SAPSENSE?node-id=3-3&t=aJGttdO2EeS82YkB-1",
+                },
+                {
+                    title: "CookUP",
+                    description:
+                        "Interactive culinary application combining recipe sharing with social networking mechanics and gamification.",
+                    tags: ["Flutter", "Dart", "Firebase", "UI/UX"],
+                    img: "assets/img/cookup.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/8Bzu2fRaY875TwtBhIjfC6/COOKUP?node-id=0-1&t=Z15QQ84Dt9sx0wd6-1",
+                },
+                {
+                    title: "RestoWeb",
+                    description:
+                        "Full Stack platform for restaurant management, optimizing real-time information flow between the dining room and kitchen.",
+                    tags: ["React", "Tailwind", "Node.js", "MySQL"],
+                    img: "assets/img/restoweb.png",
+                    hasDemo: false,
+                    hasCode: true,
+                    hasFigma: true,
+                    figma:
+                        "https://www.figma.com/design/m2KAdIx6IHbCBP7Echxezy/RestoWeb?node-id=203-2&t=Tf2MeM77rgzqXluk-1",
+                },
+            ],
+        },
+        contact: {
+            title: "Ready to build what's next?",
+            subtitle: "I am open to new opportunities. Choose your preferred channel and let's talk about how I can add value to your team.",
+            email: "Email",
+            whatsapp: "WhatsApp",
+            getInTouch: "Start a Conversation",
+        },
     },
-    about: {
-      title: "Minha Trajetória",
-      intro:
-        "Uma jornada de crescimento constante, onde cada etapa construiu a profissional que sou hoje.",
-      timeline: [
-        {
-          year: "2017 - 2021",
-          title: "Técnico em Informática",
-          institution: "IFRN",
-          description:
-            "Onde a base foi construída. Primeiros passos em programação, lógica e pensamento computacional.",
-          type: "education",
-        },
-        {
-          year: "2022 - 2025",
-          title: "Tecnologia da Informação",
-          institution: "UFRN",
-          description:
-            "Foco em engenharia e lógica. Desenvolvimento de software com fundamentos sólidos.",
-          type: "education",
-        },
-        {
-          year: "2022 - Atual",
-          title: "UX/UI Designer",
-          institution: "Datavence",
-          description:
-            "Idealizo e construo tecnologias para partidos políticos, fortalecendo a governança democrática através da tecnologia.",
-          type: "work",
-          highlights: [
-            "Arquitetura de sistemas escaláveis para gestão partidária e captação de recursos eficiente.",
-            "Desenvolvimento de dashboards inteligentes para gestão de filiados e análise de dados políticos.",
-          ],
-          impact: "Modernização da Estrutura Partidária Nacional",
-        },
-        {
-          year: "2025 - Atual",
-          title: "UX/UI Designer",
-          institution: "1Gov",
-          description:
-            "Projeto soluções centradas no usuário para o setor de saúde pública, otimizando a jornada do paciente e a eficiência operacional das unidades de saúde.",
-          type: "work",
-          highlights: [
-            "Design de sistemas de gestão hospitalar focados na redução do tempo de triagem e atendimento.",
-            "Criação de interfaces inclusivas e acessíveis para profissionais de saúde em ambientes de alta pressão.",
-          ],
-          impact: "Eficiência Tecnológica na Saúde Pública Brasileira",
-        },
-        {
-          year: "2026 - Atual",
-          title: "Engenharia de Software",
-          institution: "UFRN - 2º Ciclo",
-          description:
-            "Especialização atual em arquitetura e sistemas complexos. Visão completa do ciclo de desenvolvimento.",
-          type: "education",
-        },
-      ],
-    },
-    bento: {
-      active: {
-        title: "Vida Ativa",
-        description:
-          "Sou uma pessoa que ama estar em movimento. Corrida, academia e bike fazem parte da minha rotina. Tenho uma conexão forte com a natureza, amo os animais (especialmente gatos 🐱) — e busco sempre o equilíbrio entre corpo e mente. Também sou movida pela curiosidade e pela criatividade: gosto de fazer artesanato, sei trabalhar com macramê e atualmente estou aprendendo crochê. Além disso, eventos de tecnologia e arte, viagens e fotografia me inspiram e me motivam a crescer sempre.",
-      },
-      tech: {
-        title: "Hard Skills",
-        skills: [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "Java",
-          "Spring Cloud",
-          "NestJS",
-          "Node.js",
-          "API REST",
-          "Scrum",
-          "C++",
-          "Python",
-          "Figma",
-          "PostgreSQL",
-          "Git",
-        ],
-      },
-      ai: {
-        title: "IA como Ferramenta",
-        description:
-          "Uso a IA como ferramenta de produtividade para focar no que é humano: estratégia, UX/UI e criatividade.",
-      },
-      soft: {
-        title: "Design & Empatia",
-        description:
-          "Foco em UX/UI com cuidado genuíno pelo usuário. Cada interface é uma conversa, não uma imposição.",
-      },
-    },
-    portfolio: {
-      title: "Projetos",
-      subtitle:
-        "Uma seleção de trabalhos que demonstram minha versatilidade e atenção aos detalhes.",
-      viewProject: "Ver Projeto",
-      demo: "Demo",
-      code: "Code",
-      figma: "Figma",
-      livesite: "Site",
-      close: "Fechar",
-      overview: "Visão Geral",
-      role: "Meu Papel",
-      results: "Resultados",
-      techStack: "Stack Técnica",
-      links: "Links do Projeto",
-      projects: [
-        {
-          title: "CASI - Clínica de Apoio à Saúde do Idoso",
-          description:
-            "Sistema de gerenciamento de pacientes e agendamento para clínica geriátrica.",
-          tags: ["UX/UI", "Requisitos"],
-          img: "assets/img/casi.png",
-          hasDemo: false,
-          hasCode: false,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/4OzMQZoTSOCXxx3RZuV6Mk/Projeto-PIU?node-id=3-2&t=xtqB6TjZNr99ouze-1",
-        },
-        {
-          title: "TourAi",
-          description:
-            "Sistema de organização de viagens com itinerários personalizados usando IA generativa.",
-          tags: ["React", "Next", "Spring Boot", "PostgreSQL"],
-          img: "assets/img/tourai.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: false,
-          code: "https://github.com/Ana678/tourai-frontend",
-        },
-        {
-          title: "SAPSSense - Sistema de Apoio à Decisão na UTI",
-          description:
-            "Plataforma que faz uma previsão da mortalidade de pacientes da UTI a partir de um formulário seguindo o modelo do SAPS III e uso de IA",
-          tags: ["Flask", "CSS"],
-          img: "assets/img/saps.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/VXcliMY0EYshQI6vEmK57M/SAPSENSE?node-id=3-3&t=aJGttdO2EeS82YkB-1",
-        },
-        {
-          title: "CookUP - Plataforma de Receitas",
-          description:
-            "Projeto Acadêmico de plataforma de receitas com rede social e gamificação.",
-          tags: ["Flutter", "Dart", "Firebase", "UI/UX"],
-          img: "assets/img/cookup.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/8Bzu2fRaY875TwtBhIjfC6/COOKUP?node-id=0-1&t=Z15QQ84Dt9sx0wd6-1",
-        },
-        {
-          title: "RestoWeb",
-          description:
-            "Sistema de gerenciamento de restaurantes. Fluxos para cliente e cozinha.",
-          tags: ["React", "Tailwind", "Node.js", "MySQL"],
-          img: "assets/img/restoweb.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/m2KAdIx6IHbCBP7Echxezy/RestoWeb?node-id=203-2&t=Tf2MeM77rgzqXluk-1",
-        },
-      ],
-    },
-    contact: {
-      title: "Vamos Conversar",
-      subtitle: "Clique nos botões abaixo para entrar em contato comigo. ",
-      email: "E-mail",
-      whatsapp: "WhatsApp",
-      getInTouch: "Entrar em contato",
-    },
-  },
-  en: {
-    nav: {
-      about: "About",
-      skills: "Skills",
-      portfolio: "Portfolio",
-      contact: "Contact",
-    },
-    hero: {
-      title: "Software Engineering with Human Purpose",
-      subtitle:
-        "UX Designer & Web Developer — merging technical rigor with design sensibility",
-      cta: "View Projects",
-    },
-    about: {
-      title: "My Journey",
-      intro:
-        "A journey of constant growth, where each step built the professional I am today.",
-      timeline: [
-        {
-          year: "2017 - 2021",
-          title: "IT Technician",
-          institution: "IFRN",
-          description:
-            "Where the foundation was built. First steps in programming, logic and computational thinking.",
-          type: "education",
-        },
-        {
-          year: "2022 - 2025",
-          title: "Information Technology",
-          institution: "UFRN",
-          description:
-            "Focus on engineering and logic. Software development with solid fundamentals.",
-          type: "education",
-        },
-        {
-          year: "2022 - Present",
-          title: "UX/UI Designer",
-          institution: "Datavence",
-          description:
-            "Architecting and developing digital technologies for political organizations, strengthening democratic governance through innovation.",
-          type: "work",
-          highlights: [
-            "Designed scalable systems for political management and efficient fundraising strategies.",
-            "Developed intelligent dashboards for membership management and political data analysis.",
-          ],
-          impact: "Modernization of National Political Infrastructure",
-        },
-        {
-          year: "2025 - Present",
-          title: "UX/UI Designer",
-          institution: "1Gov",
-          description:
-            "Designing user-centric solutions for the public health sector, optimizing patient journeys and operational efficiency in healthcare facilities.",
-          type: "work",
-          highlights: [
-            "UX design for hospital management systems focused on reducing triage and wait times.",
-            "Creating inclusive and accessible interfaces for healthcare professionals in high-pressure environments.",
-          ],
-          impact: "Technological Efficiency in Brazilian Public Health",
-        },
-        {
-          year: "2026 - Present",
-          title: "Software Engineering",
-          institution: "UFRN - 2nd Cycle",
-          description:
-            "Current specialization in architecture and complex systems. Complete view of the development cycle.",
-          type: "education",
-        },
-      ],
-    },
-    bento: {
-      active: {
-        title: "Active Life",
-        description:
-          "I'm someone who loves being in motion. Running, gym and cycling are part of my routine. I love nature, animals (especially cats 🐱) and seek balance between body and mind. I'm also driven by curiosity: tech and art events, travel and photography inspire me to keep growing.",
-      },
-      tech: {
-        title: "Hard Skills",
-        skills: [
-          "React",
-          "Next.js",
-          "TypeScript",
-          "Java",
-          "Spring Cloud",
-          "NestJS",
-          "Node.js",
-          "API REST",
-          "Scrum",
-          "C++",
-          "Python",
-          "Figma",
-          "PostgreSQL",
-          "Git",
-        ],
-      },
-      ai: {
-        title: "AI as a Tool",
-        description:
-          "I use AI as a productivity tool to focus on what's human: strategy, UX/UI and creativity.",
-      },
-      soft: {
-        title: "Design & Empathy",
-        description:
-          "Focus on UX/UI with genuine care for the user. Every interface is a conversation, not an imposition.",
-      },
-    },
-    portfolio: {
-      title: "Projects",
-      subtitle:
-        "A selection of works that demonstrate my versatility and attention to detail.",
-      viewProject: "View Project",
-      demo: "Demo",
-      code: "Code",
-      figma: "Figma",
-      projects: [
-        {
-          title: "CASI - Elderly Health Support Clinic",
-          description:
-            "Patient management and scheduling system for a geriatric clinic.",
-          tags: ["UX/UI", "Requirements"],
-          img: "assets/img/casi.png",
-          hasDemo: false,
-          hasCode: false,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/4OzMQZoTSOCXxx3RZuV6Mk/Projeto-PIU?node-id=3-2&t=xtqB6TjZNr99ouze-1",
-        },
-        {
-          title: "TourAi",
-          description:
-            "Travel organization system with personalized itineraries using generative AI.",
-          tags: ["React", "Next", "Spring Boot", "PostgreSQL"],
-          img: "assets/img/tourai.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: false,
-          code: "https://github.com/Ana678/tourai-frontend",
-        },
-        {
-          title: "SAPSSense - ICU Decision Support System",
-          description:
-            "Platform that predicts ICU patient mortality based on a form following the SAPS III model and the use of AI.",
-          tags: ["Flask", "CSS"],
-          img: "assets/img/saps.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/VXcliMY0EYshQI6vEmK57M/SAPSENSE?node-id=3-3&t=aJGttdO2EeS82YkB-1",
-        },
-        {
-          title: "CookUP - Recipe Platform",
-          description:
-            "Academic project of a recipe platform with social networking and gamification.",
-          tags: ["Flutter", "Dart", "Firebase", "UI/UX"],
-          img: "assets/img/cookup.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/8Bzu2fRaY875TwtBhIjfC6/COOKUP?node-id=0-1&t=Z15QQ84Dt9sx0wd6-1",
-        },
-        {
-          title: "RestoWeb",
-          description:
-            "Restaurant management system with workflows for customers and kitchen staff.",
-          tags: ["React", "Tailwind", "Node.js", "MySQL"],
-          img: "assets/img/restoweb.png",
-          hasDemo: false,
-          hasCode: true,
-          hasFigma: true,
-          figma:
-            "https://www.figma.com/design/m2KAdIx6IHbCBP7Echxezy/RestoWeb?node-id=203-2&t=Tf2MeM77rgzqXluk-1",
-        },
-      ],
-    },
-    contact: {
-      title: "Let's Talk",
-      subtitle: "Press the buttons below to get in touch with me.",
-      email: "Email",
-      whatsapp: "WhatsApp",
-      getInTouch: "Get in touch",
-    },
-  },
 };
 
 export type Language = "pt" | "en";
